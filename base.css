@@ -6,3 +6,15 @@ body {
 
   margin: 0;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.group-input {
+  display: flex;
+  align-items: center;
+}
