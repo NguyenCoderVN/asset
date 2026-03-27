@@ -343,24 +343,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(
-    to right bottom,
-    lightgreen,
-    lightyellow
-  );
+  background: linear-gradient(to right bottom, lightgreen, lightyellow);
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-
-.container {
-  background: var(--surface);
-  color: var(--text);
-
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  text-align: center;
 }
 
 img,
@@ -455,6 +440,7 @@ a {
 .xl4 {
   font-size: 3rem;
 }
+
 .btn {
   padding: 5px 15px;
   border: none;
@@ -473,4 +459,15 @@ a {
   &:active {
     transform: scale(0.95);
   }
+}
+
+.container {
+  background: var(--surface);
+  color: var(--text);
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
 }
