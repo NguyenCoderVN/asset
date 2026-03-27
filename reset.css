@@ -1,55 +1,336 @@
-/* MODERN CSS RESET + DESIGN TOKENS
-   Updated: 2026 Standard
-*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
 
 :root {
-  /* --- 1. COLOR PALETTE (Neutrals & Accents) --- */
-  --clr-primary-400: hsl(217, 91%, 60%);
-  --clr-primary-500: hsl(217, 91%, 50%);
-  
-  --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-200: hsl(210, 40%, 98%);
-  --clr-neutral-400: hsl(215, 16%, 47%);
-  --clr-neutral-900: hsl(222, 47%, 11%);
-
-  /* --- 2. SEMANTIC COLORS (Usage based) --- */
-  --bg-body: var(--clr-neutral-100);
-  --text-main: var(--clr-neutral-900);
-  --text-muted: var(--clr-neutral-400);
-  --accent: var(--clr-primary-400);
-
-  /* --- 3. TYPOGRAPHY (Major Second Scale) --- */
-  --fs-300: 0.875rem; /* Small */
-  --fs-400: 1rem;     /* Base/Body */
-  --fs-500: 1.25rem;  /* H3 */
-  --fs-600: 1.5rem;   /* H2 */
-  --fs-700: 2rem;     /* H1 */
-  --fs-800: 3rem;     /* Hero */
-
-  /* --- 4. SPACING SYSTEM --- */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-12: 3rem;
+  --primary: #4361ee;
+  --secondary: #dee2e6;
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --text: #212529;
+  --accent: #f72585;
 }
 
-/* --- MODERN RESET START --- */
+[data-theme="dark"] {
+  --primary: #bb86fc;
+  --secondary: #03dac6;
+  --background: #121212;
+  --surface: #1e1e1e;
+  --text: #e0e0e0;
+}
 
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+[data-theme="ocean"] {
+  --primary: #0077b6;
+  --secondary: #00b4d8;
+  --background: #caf0f8;
+  --surface: #90e0ef;
+  --text: #003049;
+}
+
+[data-theme="sunset"] {
+  --primary: #c52184;
+  --secondary: #f98c40;
+  --background: #f9c846;
+  --surface: #e55986;
+  --text: #4a0e4e;
+}
+
+[data-theme="nature"] {
+  --primary: #2c5f2d;
+  --secondary: #97bc62;
+  --background: #e7e3d4;
+  --surface: #d4a373;
+  --text: #3b2a21;
+}
+
+[data-theme="pastel"] {
+  --primary: #a2d2ff;
+  --secondary: #ffafcc;
+  --background: #bde0fe;
+  --surface: #ffc8dd;
+  --text: #4a4e69;
+}
+
+[data-theme="cyber"] {
+  --primary: #ff007f;
+  --secondary: #00f0ff;
+  --background: #0b0b0b;
+  --surface: #1a1a1a;
+  --text: #fcee09;
+}
+
+[data-theme="retro"] {
+  --primary: #e76f51;
+  --secondary: #f4a261;
+  --background: #e9c46a;
+  --surface: #2a9d8f;
+  --text: #264653;
+}
+
+[data-theme="luxury"] {
+  --primary: #d4af37;
+  --secondary: #f3e5ab;
+  --background: #0f172a;
+  --surface: #1e293b;
+  --text: #fafafa;
+}
+
+[data-theme="startup"] {
+  --primary: #4f46e5;
+  --secondary: #d946ef;
+  --background: #f1f5f9;
+  --surface: #ffffff;
+  --text: #1e293b;
+}
+
+[data-theme="neon"] {
+  --primary: #39ff14;
+  --secondary: #ff00ff;
+  --background: #000000;
+  --surface: #111111;
+  --text: #ffffff;
+}
+
+[data-theme="monochrome"] {
+  --primary: #000000;
+  --secondary: #404040;
+  --background: #ffffff;
+  --surface: #f0f0f0;
+  --text: #1a1a1a;
+}
+
+[data-theme="autumn"] {
+  --primary: #d97706;
+  --secondary: #b45309;
+  --background: #fef3c7;
+  --surface: #fde68a;
+  --text: #78350f;
+}
+
+[data-theme="lavender"] {
+  --primary: #8b5cf6;
+  --secondary: #a78bfa;
+  --background: #f3e8ff;
+  --surface: #e9d5ff;
+  --text: #4c1d95;
+}
+
+[data-theme="coffee"] {
+  --primary: #6f4e37;
+  --secondary: #d2b48c;
+  --background: #f5f5dc;
+  --surface: #e6d7c3;
+  --text: #3e2723;
+}
+
+[data-theme="mint"] {
+  --primary: #10b981;
+  --secondary: #34d399;
+  --background: #ecfdf5;
+  --surface: #d1fae5;
+  --text: #064e3b;
+}
+
+[data-theme="dracula"] {
+  --primary: #ff79c6;
+  --secondary: #bd93f9;
+  --background: #282a36;
+  --surface: #44475a;
+  --text: #f8f8f2;
+}
+
+[data-theme="valentine"] {
+  --primary: #e11d48;
+  --secondary: #fb7185;
+  --background: #fff1f2;
+  --surface: #ffe4e6;
+  --text: #881337;
+}
+
+[data-theme="nord"] {
+  --primary: #5e81ac;
+  --secondary: #88c0d0;
+  --background: #2e3440;
+  --surface: #3b4252;
+  --text: #eceff4;
+}
+
+[data-theme="synthwave"] {
+  --primary: #f92aad;
+  --secondary: #42ebf5;
+  --background: #2b213a;
+  --surface: #241b2f;
+  --text: #f8f8f2;
+}
+
+[data-theme="deepsea"] {
+  --primary: #023e8a;
+  --secondary: #0096c7;
+  --background: #03045e;
+  --surface: #0077b6;
+  --text: #caf0f8;
+}
+
+[data-theme="volcano"] {
+  --primary: #d00000;
+  --secondary: #ffba08;
+  --background: #370617;
+  --surface: #6a040f;
+  --text: #f8f9fa;
+}
+
+[data-theme="space"] {
+  --primary: #7209b7;
+  --secondary: #4cc9f0;
+  --background: #0b090a;
+  --surface: #161a1d;
+  --text: #ffffff;
+}
+
+[data-theme="desert"] {
+  --primary: #e07a5f;
+  --secondary: #f2cc8f;
+  --background: #f4f1de;
+  --surface: #eaddcf;
+  --text: #3d405b;
+}
+
+[data-theme="glacier"] {
+  --primary: #8ecae6;
+  --secondary: #219ebc;
+  --background: #f8f9fa;
+  --surface: #e0fbfc;
+  --text: #023047;
+}
+
+[data-theme="berry"] {
+  --primary: #9d4edd;
+  --secondary: #e0aaff;
+  --background: #240046;
+  --surface: #3c096c;
+  --text: #f8f9fa;
+}
+
+[data-theme="hacker"] {
+  --primary: #00ff00;
+  --secondary: #33ff33;
+  --background: #000000;
+  --surface: #0a0a0a;
+  --text: #00ff00;
+}
+
+[data-theme="cottoncandy"] {
+  --primary: #ffafcc;
+  --secondary: #a2d2ff;
+  --background: #fff0f3;
+  --surface: #fde2e4;
+  --text: #5c677d;
+}
+
+[data-theme="steampunk"] {
+  --primary: #cb997e;
+  --secondary: #ddbea9;
+  --background: #6b705c;
+  --surface: #a5a58d;
+  --text: #ffe8d6;
+}
+
+[data-theme="galaxy"] {
+  --primary: #5e60ce;
+  --secondary: #5390d9;
+  --background: #10002b;
+  --surface: #240046;
+  --text: #e0e0e0;
+}
+
+[data-theme="minimal"] {
+  --primary: #2b2d42;
+  --secondary: #8d99ae;
+  --background: #edf2f4;
+  --surface: #ffffff;
+  --text: #2b2d42;
+}
+
+[data-theme="vampire"] {
+  --primary: #ba1826;
+  --secondary: #e5383b;
+  --background: #0b090a;
+  --surface: #161a1d;
+  --text: #f5f3f4;
+}
+
+[data-theme="matcha"] {
+  --primary: #588157;
+  --secondary: #a3b18a;
+  --background: #dad7cd;
+  --surface: #e9e5db;
+  --text: #344e41;
+}
+
+[data-theme="twilight"] {
+  --primary: #b56576;
+  --secondary: #eaac8b;
+  --background: #2b2d42;
+  --surface: #355070;
+  --text: #ffffff;
+}
+
+[data-theme="halloween"] {
+  --primary: #f77f00;
+  --secondary: #d62828;
+  --background: #003049;
+  --surface: #212529;
+  --text: #fcbf49;
+}
+
+[data-theme="aurora"] {
+  --primary: #06d6a0;
+  --secondary: #118ab2;
+  --background: #073b4c;
+  --surface: #006466;
+  --text: #ffffff;
+}
+
+[data-theme="cherryblossom"] {
+  --primary: #ef476f;
+  --secondary: #ffd166;
+  --background: #fffcf2;
+  --surface: #ccc5b9;
+  --text: #403d39;
+}
+
+[data-theme="gold"] {
+  --primary: #ffb703;
+  --secondary: #fb8500;
+  --background: #023047;
+  --surface: #219ebc;
+  --text: #8ecae6;
+}
+
+[data-theme="abyss"] {
+  --primary: #03071e;
+  --secondary: #370617;
+  --background: #000000;
+  --surface: #0b090a;
+  --text: #ffba08;
+}
+
+[data-theme="forest"] {
+  --primary: #283618;
+  --secondary: #606c38;
+  --background: #fefae0;
+  --surface: #dda15e;
+  --text: #bc6c25;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
 *:not(dialog) {
   margin: 0;
 }
 
-/* 3. Enable keyword animations (Interpolate sizes like 'auto') */
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
@@ -58,12 +339,10 @@
 }
 
 body {
-  /* 4. Increase line-height & Set Base Styles */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-   
   background: linear-gradient(
     to right bottom,
     lightgreen,
@@ -71,59 +350,78 @@ body {
     lightgreen
   );
   font-family: "Poppins", sans-serif;
-
-  /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
 
 .container {
-  background: white;
+  background: var(--surface);
+  color: var(--text);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-
   text-align: center;
 }
 
-/* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-/* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-/* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-/* 9. Improve line wrapping & Scale */
 p {
   text-wrap: pretty;
-  margin-bottom: var(--space-4);
+  margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: var(--space-2);
+  margin-bottom: 0.5rem;
 }
 
-h1 { font-size: var(--fs-700); }
-h2 { font-size: var(--fs-600); }
-h3 { font-size: var(--fs-500); }
+h1 {
+  font-size: 2rem;
+}
 
-/* 10. Create a root stacking context */
-#root, #__next {
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+#root,
+#__next {
   isolation: isolate;
 }
 
-/* Bonus: Link Styling */
 a {
   color: var(--accent);
   text-underline-offset: 3px;
@@ -156,5 +454,3 @@ a {
 .xl4 {
   font-size: 3rem;
 }
-
-/* --- MODERN RESET END --- */  
