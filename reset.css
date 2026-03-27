@@ -1,0 +1,148 @@
+/* MODERN CSS RESET + DESIGN TOKENS
+   Updated: 2026 Standard
+*/
+
+:root {
+  /* --- 1. COLOR PALETTE (Neutrals & Accents) --- */
+  --clr-primary-400: hsl(217, 91%, 60%);
+  --clr-primary-500: hsl(217, 91%, 50%);
+  
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(210, 40%, 98%);
+  --clr-neutral-400: hsl(215, 16%, 47%);
+  --clr-neutral-900: hsl(222, 47%, 11%);
+
+  /* --- 2. SEMANTIC COLORS (Usage based) --- */
+  --bg-body: var(--clr-neutral-100);
+  --text-main: var(--clr-neutral-900);
+  --text-muted: var(--clr-neutral-400);
+  --accent: var(--clr-primary-400);
+
+  /* --- 3. TYPOGRAPHY (Major Second Scale) --- */
+  --fs-300: 0.875rem; /* Small */
+  --fs-400: 1rem;     /* Base/Body */
+  --fs-500: 1.25rem;  /* H3 */
+  --fs-600: 1.5rem;   /* H2 */
+  --fs-700: 2rem;     /* H1 */
+  --fs-800: 3rem;     /* Hero */
+
+  /* --- 4. SPACING SYSTEM --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+}
+
+/* --- MODERN RESET START --- */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations (Interpolate sizes like 'auto') */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  /* 4. Increase line-height & Set Base Styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  line-height: 1.5;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: var(--fs-400);
+
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping & Scale */
+p {
+  text-wrap: pretty;
+  margin-bottom: var(--space-4);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+h1 { font-size: var(--fs-700); }
+h2 { font-size: var(--fs-600); }
+h3 { font-size: var(--fs-500); }
+
+/* 10. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Bonus: Link Styling */
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.xs {
+  font-size: 0.75rem;
+}
+
+.sm {
+  font-size: 0.875rem;
+}
+
+.lg {
+  font-size: 1.125rem;
+}
+
+.xl {
+  font-size: 1.5rem;
+}
+
+.xl2 {
+  font-size: 1.875rem;
+}
+
+.xl3 {
+  font-size: 2.25rem;
+}
+
+.xl4 {
+  font-size: 3rem;
+}
+
+/* --- MODERN RESET END --- */  
