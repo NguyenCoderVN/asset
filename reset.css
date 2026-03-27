@@ -1,6 +1,7 @@
 /* MODERN CSS RESET + DESIGN TOKENS
    Updated: 2026 Standard
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
 
 :root {
   /* --- 1. COLOR PALETTE (Neutrals & Accents) --- */
@@ -62,12 +63,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
-  line-height: 1.5;
-  background-color: var(--bg-body);
-  color: var(--text-main);
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: var(--fs-400);
+   
+  background: linear-gradient(
+    to right bottom,
+    lightgreen,
+    lightyellow,
+    lightgreen
+  );
+  font-family: "Poppins", sans-serif;
 
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
