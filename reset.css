@@ -442,12 +442,17 @@ a {
 }
 
 .btn {
+  width: fit-content;
+
+  background: slateblue;
   padding: 5px 15px;
   border: none;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin: 0 10px;
+  margin: 10px;
+  align-self: center;
 
+  color: white;
   cursor: pointer;
 
   transition: transform 0.2s ease-in-out;
