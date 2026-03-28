@@ -471,3 +471,16 @@ a {
   overflow: hidden;
   text-align: center;
 }
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+
+  &:focus {
+    outline: none;
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+  }
+}
