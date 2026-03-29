@@ -343,7 +343,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right bottom, lightgreen, lightyellow);
+  background: linear-gradient(
+    to right bottom,
+    lightgreen,
+    lightyellow
+  );
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -467,6 +471,7 @@ a {
 }
 
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
