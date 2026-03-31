@@ -445,7 +445,7 @@ a {
   font-size: 3rem;
 }
 
-.btn {
+button {
   width: fit-content;
 
   background: slateblue;
