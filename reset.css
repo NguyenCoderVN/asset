@@ -92,27 +92,27 @@ h3 {
   isolation: isolate;
 }
 
-/* button { */
-/*   background: slateblue; */
-/*   padding: 10px 15px; */
-/*   border: none; */
-/*   border-radius: 5px; */
-/*   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); */
-/*   align-self: center; */
-/**/
-/*   color: white; */
-/*   cursor: pointer; */
-/**/
-/*   transition: transform 0.2s ease-in-out; */
-/**/
-/*   &:hover { */
-/*     transform: scale(1.05); */
-/*   } */
-/**/
-/*   &:active { */
-/*     transform: scale(0.95); */
-/*   } */
-/* } */
+button {
+  background: slateblue;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  /* align-self: center; */
+
+  color: white;
+  cursor: pointer;
+
+  /* transition: transform 0.2s ease-in-out; */
+  /**/
+  /* &:hover { */
+  /*   transform: scale(1.05); */
+  /* } */
+  /**/
+  /* &:active { */
+  /*   transform: scale(0.95); */
+  /* } */
+}
 
 .container {
   position: relative;
