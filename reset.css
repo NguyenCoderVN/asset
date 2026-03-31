@@ -18,100 +18,101 @@
   }
 }
 
-/* body { */
-/*   display: flex; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/*   min-height: 100vh; */
-/*   background: linear-gradient( */
-/*     to right bottom, */
-/*     lightgreen, */
-/*     lightyellow */
-/*   ); */
-/*   font-family: "Poppins", sans-serif; */
-/*   -webkit-font-smoothing: antialiased; */
-/* } */
-/**/
-/* img, */
-/* picture, */
-/* video, */
-/* canvas, */
-/* svg { */
-/*   display: block; */
-/*   max-width: 100%; */
-/* } */
-/**/
-/* input, */
-/* button, */
-/* textarea, */
-/* select { */
-/*   font: inherit; */
-/* } */
-/**/
-/* p, */
-/* h1, */
-/* h2, */
-/* h3, */
-/* h4, */
-/* h5, */
-/* h6 { */
-/*   overflow-wrap: break-word; */
-/* } */
-/**/
-/* p { */
-/*   text-wrap: pretty; */
-/*   margin-bottom: 1rem; */
-/* } */
-/**/
-/* h1, */
-/* h2, */
-/* h3, */
-/* h4, */
-/* h5, */
-/* h6 { */
-/*   text-wrap: balance; */
-/*   line-height: 1.1; */
-/*   font-weight: 700; */
-/*   margin-bottom: 0.5rem; */
-/* } */
-/**/
-/* h1 { */
-/*   font-size: 2rem; */
-/* } */
-/**/
-/* h2 { */
-/*   font-size: 1.5rem; */
-/* } */
-/**/
-/* h3 { */
-/*   font-size: 1.25rem; */
-/* } */
-/**/
-/* #root, */
-/* #__next { */
-/*   isolation: isolate; */
-/* } */
-
-button {
-  background: slateblue;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-
-  color: white;
-  cursor: pointer;
-
-  transition: transform 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    lightgreen,
+    lightyellow
+  );
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* button { */
+/*   background: slateblue; */
+/*   padding: 10px 15px; */
+/*   border: none; */
+/*   border-radius: 5px; */
+/*   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); */
+/*   align-self: center; */
+/**/
+/*   color: white; */
+/*   cursor: pointer; */
+/**/
+/*   transition: transform 0.2s ease-in-out; */
+/**/
+/*   &:hover { */
+/*     transform: scale(1.05); */
+/*   } */
+/**/
+/*   &:active { */
+/*     transform: scale(0.95); */
+/*   } */
+/* } */
 
 .container {
   position: relative;
