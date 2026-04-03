@@ -110,15 +110,15 @@ button {
   width: fit-content;
 
   background: var(--surface);
-  color: var(--text);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 
   padding: 1.5em;
   border-radius: 8px;
   margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
 
   text-align: center;
+  color: var(--text);
 
   & label {
     align-self: flex-start;
