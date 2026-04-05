@@ -13,19 +13,6 @@ html {
   text-size-adjust: none;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
-}
-
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
@@ -131,6 +118,7 @@ body {
 
   background: linear-gradient(to right bottom, lightgreen, lightyellow);
   padding: 1.5rem;
+  margin: 0;
 
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
