@@ -84,12 +84,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: fit-content;
+  width: 92%;
+  max-width: 1440px;
   overflow: hidden;
 
   padding: 1.5em;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
 
   & label {
     align-self: flex-start;
