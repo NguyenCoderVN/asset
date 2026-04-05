@@ -73,6 +73,7 @@ body {
   min-height: 100vh;
 
   background: linear-gradient(to right bottom, lightgreen, lightyellow);
+  padding: 1.5rem;
 
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
