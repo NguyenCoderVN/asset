@@ -213,6 +213,7 @@ input:hover {
   transition: all 0.3s ease-in-out;
 
   &:hover {
+    transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
   }
 }
