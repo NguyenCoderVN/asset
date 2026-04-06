@@ -199,6 +199,18 @@ input:hover {
   border-color: #cbd5e0;
 }
 
+.li-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5em;
+}
+
 .center {
   position: absolute;
   left: 50%;
