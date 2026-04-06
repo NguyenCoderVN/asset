@@ -200,6 +200,10 @@ input:hover {
   border-color: #cbd5e0;
 }
 
+input .incorrect {
+  border: 2px solid orangered;
+}
+
 .li-box {
   display: flex;
   justify-content: space-between;
