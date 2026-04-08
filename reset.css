@@ -7,6 +7,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Đơn vị cơ sở (thường là 16px) */
+  --base-space: 1rem;
+
+  /* Tỉ lệ vàng 1.618 */
+  --golden-ratio: 1.618;
+
+  /* Các khoảng cách được tính toán theo tỉ lệ vàng */
+  --space-sm: calc(var(--base-space) / var(--golden-ratio)); /* ~10px */
+  --space-md: var(--base-space); /* 16px */
+  --space-lg: calc(var(--base-space) * var(--golden-ratio)); /* ~26px */
+  --space-xl: calc(var(--space-lg) * var(--golden-ratio)); /* ~42px */
+}
+
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
@@ -18,9 +32,51 @@ ol[role="list"] {
   list-style: none;
 }
 
-body {
-  min-height: 100vh;
-  line-height: 1.5;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-lg);
+  color: #ffffff;
+}
+
+p {
+  font-size: 1rem;
+  line-height: var(--golden-ratio);
+  margin-bottom: var(--space-md);
+  color: #333;
+}
+
+h2 {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: #444;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 h1,
@@ -31,24 +87,8 @@ button,
 input,
 label {
   line-height: 1.1;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
   text-wrap: balance;
   color: inherit;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
 }
 
 a:not([class]) {
