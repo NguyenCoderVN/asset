@@ -8,13 +8,9 @@
 }
 
 :root {
-  /* Đơn vị cơ sở (thường là 16px) */
   --base-space: 1rem;
-
-  /* Tỉ lệ vàng 1.618 */
   --golden-ratio: 1.618;
 
-  /* Các khoảng cách được tính toán theo tỉ lệ vàng */
   --space-sm: calc(var(--base-space) / var(--golden-ratio)); /* ~10px */
   --space-md: var(--base-space); /* 16px */
   --space-lg: calc(var(--base-space) * var(--golden-ratio)); /* ~26px */
@@ -201,7 +197,6 @@ button {
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 1rem 0;
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
