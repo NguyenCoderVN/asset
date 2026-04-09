@@ -193,13 +193,12 @@ body {
 }
 
 button {
-  padding: 0.75em 1.5em;
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 
   &:hover {
     filter: brightness(1.1);
