@@ -214,37 +214,35 @@ button {
   }
 }
 
-/* input { */
-/*   width: 100%; */
-/**/
-/*   background-color: #fff; */
-/*   padding: 0.75em 1em; */
-/*   border: 2px solid #e2e8f0; */
-/*   border-radius: 0.5rem; */
-/**/
-/*   font-size: 1rem; */
-/**/
-/*   transition: all 0.2s ease; */
-/* } */
-/**/
-/* input:focus { */
-/*   outline: none; */
-/*   border-color: #667eea; */
-/*   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); */
-/* } */
-/**/
-/* input:hover { */
-/*   border-color: #cbd5e0; */
-/* } */
-/**/
-/* input.incorrect { */
-/*   border: 2px solid orangered; */
-/* } */
-/**/
-/* input.correct { */
-/*   border: 2px solid green; */
-/* } */
-/**/
+input {
+  background-color: #fff;
+  padding: 0.75em 1em;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+
+  font-size: 1rem;
+
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+input:hover {
+  border-color: #cbd5e0;
+}
+
+input.incorrect {
+  border: 2px solid orangered;
+}
+
+input.correct {
+  border: 2px solid green;
+}
+
 .li-box {
   display: flex;
   justify-content: space-between;
