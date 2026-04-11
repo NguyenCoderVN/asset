@@ -82,9 +82,18 @@ h4,
 button,
 input,
 label {
-  line-height: 1.1;
-  text-wrap: balance;
+  background: inherit;
+
   color: inherit;
+  text-wrap: balance;
+  line-height: 1.1;
+
+  &::before,
+  &::after {
+    background: inherit;
+
+    color: inherit;
+  }
 }
 
 a:not([class]) {
