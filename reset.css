@@ -87,6 +87,10 @@ label {
   color: inherit;
   text-wrap: balance;
   line-height: 1.1;
+
+  &::after {
+    background: inherit;
+  }
 }
 
 a:not([class]) {
