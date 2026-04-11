@@ -90,6 +90,9 @@ label {
 
   &::before,
   &::after {
+    display: block;
+    content: "";
+
     background: inherit;
 
     color: inherit;
