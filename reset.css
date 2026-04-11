@@ -82,8 +82,6 @@ h4,
 button,
 input,
 label {
-  background: inherit;
-
   color: inherit;
   text-wrap: balance;
   line-height: 1.1;
